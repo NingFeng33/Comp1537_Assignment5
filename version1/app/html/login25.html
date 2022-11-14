@@ -1,0 +1,90 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>This is My Blog</title>
+      <link rel="stylesheet" type="text/css" href="css/style1.css" />
+  </head>
+
+  <body>
+
+  <h1>Looking for My Blog?</h1>
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Plese Click Here</button>
+
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="/blog" method="post">
+      <fieldset>
+      <legend> User Profile </legend>
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="/img/3.jpg" alt="Mypic" class="mypic">
+      </div>
+
+      <div class="container">
+      
+        <label for="uname"><b>Username</b></label>
+
+        <input type="text" placeholder="YourFullName" id="uname"  pattern="[A-Za-z]+" minlength="8" maxlength="20" required>
+        
+        <label for="psw"><b>Password</b></label>
+
+        <input type="password" placeholder="10~20 characters" id="psw" pattern="[A-Za-z0-9\-]+" minlength="10" maxlength="20" required>
+        
+        <label for="Age"><b>YourAge</b></label>
+
+        <input type="number" placeholder="Age(e.g.25)" id="Age" min="18" max="65" required>
+
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <button type="submit" value = "submit" formaction = "/blog">Submit</button>
+      
+        
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+        <button type="reset" class="resetbtn">Reset</button>
+      
+      </div>
+
+      <table style="width:100%">
+          <tr>
+            <th>Course name</th>
+            <th>Course numer</th>
+            <th>Course credits</th>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>COMP-1537</td>
+            <td></td>
+          </tr>
+        </table>
+
+    </fieldset>
+    <footer>
+      <p>Author: Ning Feng<br>
+      <a href="mailto:nfeng2@my.bcit.ca">nfeng2@my.bcit.ca</a><br>
+      Student Number: A01329465</p>
+      <a href="https://www.bcit.ca">My Beautiful College</a>
+    </footer>
+    </form>
+  </div>
+
+  <script>
+
+  var modal = document.getElementById('id01');
+
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+  
+  <script src="js/client.js"></script>
+  </body>
+
+  </html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+h1 {
+font-style:italic;
+color:#977c00;
+font-size:40pt;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(97, 94, 94);
+  box-sizing: border-box;
+}
+
+input[type=number]{
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(97, 94, 94);
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0415aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #975c57;
+}
+
+.resetbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #975c57;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.mypic {
+  width: 20%;
+  border-radius: 20%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto 15% auto; 
+  border: 1px solid #888;
+  width: 60%; 
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 1;
+  animation: animatezoom 1s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+  
+  .resetbtn {
+     width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-image:url('https://dummyimage.com/1920X1680/c255b0/000000.jpg&text=++');
+  color: white;
+}
+
+table, th, td {
+          padding: 2px;
+          border:1px solid black;
+          text-align: left;
+}
+tr:hover {background-color: #D6EEEE;
+}
+ 
