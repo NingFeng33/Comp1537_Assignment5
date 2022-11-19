@@ -5,8 +5,9 @@
 const express = require("express");
 const app = express();
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 const fs = require("fs");
+
+//app.use(express.urlencoded({ extended: true }));
 
 // just like a simple web server like Apache web server
 // we are mapping file system paths to the app's virtual paths
@@ -22,8 +23,15 @@ app.get("/", function (req, res) {
 });
 
 app.get('/lucas', function (req, res) {
-    let doc = fs.readFileSync('./app/html/lucas.html', "utf8");
-    res.send(doc);
+    let formatOfResponse = req.query["format"];
+
+    if (formatOfResponse == "json") {
+    res.setHeader("Content-Type", "application/json");
+    res.send(fs.readFileSync('./app/data/lucas.js', "utf8"));
+    }
+    else {
+        res.send({status: "fail", msg: "Wrong format!"});
+    }
 })
 
 

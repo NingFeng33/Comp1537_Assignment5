@@ -9,13 +9,7 @@
 <link href="css/layout.css" rel="stylesheet" type="text/css"  media="all">
 <script
   src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-      $("#lucasbtn").click(fuction() {
-        $("lucas").load();
-      });
-    });
-</script>
+
 </head>
 <body id="top">
 
@@ -96,7 +90,8 @@
           <div id = "lucas">
             <p>What is his favorite?</p>
           </div>
-          <button id = "lucasbtn">"Fries!Fries!Fries!"</button>
+          <input id = "lucasJSON" type = "button" value = "Fries!Fries!Fries!"/>
+          <div class = "ajax-stuff" id = "lucas-json"></div>
         </article>
       </li>
       <li class="one_third">
@@ -172,10 +167,11 @@
     <!-- ################################################################################################ -->
   </section>
 </div>
+<script src="js/client.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.backtotop.js"></script>
 <script src="js/jquery.mobilemenu.js"></script>
-<script src="js/client.js"></script>
+
 </body>
 </html>
 
