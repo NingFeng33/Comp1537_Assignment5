@@ -32,7 +32,7 @@ app.get('/lucas', function (req, res) {
     else {
         res.send({status: "fail", msg: "Wrong format!"});
     }
-})
+});
 
 
 app.post("/gallery.html", function (req, res) {

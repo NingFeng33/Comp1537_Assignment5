@@ -1,7 +1,7 @@
-ready(function () {
+    ready(function () {
+
+    
     console.log("client script loaded.");
-
-
     function ajaxGET(url, callback) {
 
         const xhr = new XMLHttpRequest();
@@ -13,10 +13,10 @@ ready(function () {
                 console.log(this.status);
             }
         }
-    }
+  
     xhr.open("GET", url);
     xhr.send();
-
+    }
 
     document.querySelectorAll(".clear").forEach(function(currentElement, currentIndex, listObj){
     currentElement.addEventListener("click", function(e) {
@@ -47,8 +47,8 @@ ready(function () {
         document.getElementById("lucas-json").innerHTML = str;
     });
     console.log("What is sth?", sth);
-  })
-})
+  });
+});
 
 function ready(callback) {
     if (document.readyState != "loading") {
@@ -59,3 +59,4 @@ function ready(callback) {
         console.log("Listener was invoked");
     }
 }
+
